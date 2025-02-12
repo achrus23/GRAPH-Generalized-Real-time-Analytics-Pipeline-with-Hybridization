@@ -1,7 +1,6 @@
 # GRAPH: Generalized Real-time Analytics Pipeline with Hybridization of Docker, Neo4j, Kubernetes, and Kafka  
 
 ## Project Overview  
-
 GRAPH is a **scalable real-time graph analytics pipeline** that integrates **Docker, Neo4j, Kubernetes, and Kafka** to process and analyze large-scale graph data efficiently. This project models real-world trip data using graph structures and enables real-time streaming and analytics. The system is designed to **handle dynamic, large-scale data with minimal latency** and supports advanced graph traversal techniques such as **PageRank and Breadth-First Search (BFS)**.
 
 ## Key Features  
@@ -35,7 +34,6 @@ Key attributes include:
 - **Passenger Count & Payment Type**  
 
 ## Installation  
-
 ### **Prerequisites**  
 - Python **3.8+**  
 - Docker **(for containerized Neo4j deployment)**  
@@ -43,3 +41,17 @@ Key attributes include:
 - Apache Kafka **(for real-time streaming)**  
 - Neo4j Graph Data Science Library  
 
+---
+
+## 🚀 **Setup Instructions**  
+The setup for each phase is provided in its respective folder:
+
+📂 **[Phase 1: Foundational Graph Processing](./Phase1_Foundational_Graph_Processing/README.md)**  
+- Includes **Dockerized setup** for Neo4j and initial graph processing.  
+- Instructions for **running PageRank and BFS algorithms**.  
+
+📂 **[Phase 2: Scalable & Real-time Processing](./Phase2_RealTime_Scalable_Processing/README.md)**  
+- Includes **Kubernetes and Kafka deployment** setup.  
+- Instructions for **real-time data ingestion and analysis**.  
+
+For installation and execution, refer to the **README.md** file inside each phase folder.
