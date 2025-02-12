@@ -1,0 +1,67 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kafka-service
+spec:
+  selector:
+    app: kafka  # Aligning with Deployment labels
+  ports:
+    - protocol: TCP
+      name: portone
+      port: 9092
+      targetPort: 9092
+    - protocol: TCP
+      name: porttwo
+      port: 29092
+      targetPort: 29092
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-deployment
+  labels:
+    app: kafka  # Aligning with Service selector
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kafka  # Aligning with Service selector
+  template:
+    metadata:
+      labels:
+        app: kafka  # Aligning with Service selector
+    spec:
+      containers:
+        - name: kafka
+          image: confluentinc/cp-kafka:7.3.3
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9092
+            - containerPort: 29092
+          env:
+            - name: KAFKA_BROKER_ID
+              value: "1"
+            - name: KAFKA_ZOOKEEPER_CONNECT
+              value: zookeeper-service:2181
+            - name: KAFKA_ADVERTISED_LISTENERS
+              value: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka-service:29092
+            - name: KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
+              value: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+            - name: KAFKA_INTER_BROKER_LISTENER_NAME
+              value: PLAINTEXT_INTERNAL
+            - name: KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR
+              value: "1"
+            - name: KAFKA_MESSAGE_MAX_BYTES
+              value: "125829120" # 120 MB
+            - name: KAFKA_FETCH_MAX_BYTES
+              value: "125829120" # 120 MB
+            - name: KAFKA_AUTO_CREATE_TOPICS_ENABLE
+              value: "true"
+            - name: KAFKA_HEAP_OPTS
+              value: "-Xmx512M -Xms512M"  # Memory limits for Kafka
+          volumeMounts:
+            - name: kafka-data
+              mountPath: /var/lib/kafka/data  # Ensuring data persistence
+      volumes:
+        - name: kafka-data
+          emptyDir: {}  # Replace with a PersistentVolumeClaim for real-world use

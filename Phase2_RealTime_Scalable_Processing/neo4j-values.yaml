@@ -1,0 +1,16 @@
+acceptLicenseAgreement: "yes"
+neo4j:
+  name: "neo4j-standalone"
+  password: "project1phase2"
+  plugins:
+    - "graph-data-science"
+    - "apoc"
+volumes:
+  data:
+    mode: defaultStorageClass
+env:
+  NEO4J_PLUGINS: '["apoc", "graph-data-science"]'
+config:
+  dbms.security.procedures.unrestricted: "apoc.*,gds.*"
+readinessProbe:
+  initialDelaySeconds: 120
