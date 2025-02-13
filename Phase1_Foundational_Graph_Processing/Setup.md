@@ -1,6 +1,6 @@
 # Phase 1: Setup Guide  
 
-🚀 **This guide walks through the process of setting up Phase 1 using Docker**.  
+**This guide walks through the process of setting up Phase 1 using Docker**.  
 Since the **Dockerfile automates everything**, you only need to update a few details and run some commands.
 
 ---
@@ -9,7 +9,7 @@ Since the **Dockerfile automates everything**, you only need to update a few det
 Since the repository is already cloned, update the **Dockerfile** to **use local files** instead of cloning from GitHub.
 
 ### **Changes to Make in the Dockerfile**
-1️⃣ **Remove or comment out the GitHub repository cloning section**  
+**Remove or comment out the GitHub repository cloning section**  
 Find this section in the `Dockerfile`:
 ```dockerfile
 # Clone the GitHub repository dynamically
@@ -26,12 +26,12 @@ RUN echo "Cloning the repository from GitHub..." && \
         exit 1; \
     fi
 
-2️⃣ Modify the Dockerfile to Copy Files from Your Local Directory
+Modify the Dockerfile to Copy Files from Your Local Directory
 Add the following line to copy files from your local cloned repository into the container:
 # Copy local project files into the Docker container
 COPY . /workspace
 
-3️⃣ Modify Python Script Paths (If Needed)
+Modify Python Script Paths (If Needed)
 In the Dockerfile, make sure that the Neo4j data loading script points to the correct directory.
 Find this line:
 python3 /workspace/data_loader.py
