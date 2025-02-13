@@ -9,6 +9,7 @@
 
 ## 📂 **Project Structure**  
 📂 Phase1_Foundational_Graph_Processing
+
 │-- 📂 SS-Cypher Some snapshots and results from Phase I
 
 │-- 📜 README.md # Overview of Phase 1
