@@ -16,4 +16,4 @@ Since the **configuration files automate everything**, you only need to update a
 │-- 📜 interface.py # Interacts with the data pipeline
 
 ## 🛠 **Setup Instructions**  
-For detailed setup steps, **please refer to** [setup.md](./setup.md).
+For detailed setup steps, **please refer to** [setup.md](./Setup.md).
