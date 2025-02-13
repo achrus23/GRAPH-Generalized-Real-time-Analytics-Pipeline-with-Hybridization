@@ -6,13 +6,21 @@ Since the **configuration files automate everything**, you only need to update a
 ---
 
 ## 📂 **Project Structure**  
+
 📂 Phase2_RealTime_Scalable_Processing
+
 │-- 📜 README.md # Overview of Phase 2
+
 │-- 📜 setup.md # Detailed setup instructions
+
 │-- 📜 zookeeper-setup.yaml # Zookeeper configuration
+
 │-- 📜 kafka-setup.yaml # Kafka broker setup
+
 │-- 📜 neo4j-values.yaml # Neo4j Helm chart values
+
 │-- 📜 kafka-neo4j-connector.yaml # Kafka → Neo4j streaming config
+
 │-- 📜 interface.py # Interacts with the data pipeline
 
 ## **Setup Instructions**  
