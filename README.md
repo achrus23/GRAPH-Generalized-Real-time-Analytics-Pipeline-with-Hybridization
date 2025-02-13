@@ -50,7 +50,7 @@ Clone the Repository**
 To begin, clone the repository to your local machine:  
 ```sh
 git clone https://github.com/achrus23/GRAPH-Generalized-Real-time-Analytics-Pipeline-with-Hybridization.git
-cd cd graph-analytics-pipeline/GRAPH_Generalized_Real_time_Analytics_Pipeline_with_Hybridization
+cd graph-analytics-pipeline/GRAPH_Generalized_Real_time_Analytics_Pipeline_with_Hybridization
 ```
 
 📂 **[Phase 1: Foundational Graph Processing](./Phase1_Foundational_Graph_Processing/README.md)**  
