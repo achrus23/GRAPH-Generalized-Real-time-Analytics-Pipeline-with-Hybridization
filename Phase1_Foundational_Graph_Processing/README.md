@@ -1,6 +1,6 @@
 # Phase 1: Foundational Graph Processing  
 
-🚀 **Phase 1 focuses on setting up a containerized Neo4j environment** to process and analyze the NYC Yellow Cab trip dataset as a graph. This phase includes:  
+**Phase 1 focuses on setting up a containerized Neo4j environment** to process and analyze the NYC Yellow Cab trip dataset as a graph. This phase includes:  
 - **Dockerized deployment** of Neo4j for modular and scalable graph storage.  
 - **Graph modeling** of pickup/drop-off locations & trip relationships.  
 - **Implementation of core graph algorithms**:  
