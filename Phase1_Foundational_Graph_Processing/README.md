@@ -8,13 +8,20 @@
   - **Breadth-First Search (BFS)** to compute shortest paths.  
 
 ## 📂 **Project Structure**  
-📂 Phase1_Foundational_Graph_Processing 
-│-- 📜 README.md # Overview of Phase 1 
+📂 Phase1_Foundational_Graph_Processing
+
+│-- 📜 README.md # Overview of Phase 1
+
 │-- 📜 setup.md # Detailed setup instructions 
+
 │-- 📜 Dockerfile # Containerized setup 
+
 │-- 📜 interface.py # PageRank algorithm 
+
 │-- 📜 tester.py # tester algorithm 
+
 │-- 📜 data_loader.py # Loads dataset into Neo4j
+
 
 ## 🛠 **Setup Instructions**  
 For detailed setup steps, **please refer to** [setup.md](./setup.md).
