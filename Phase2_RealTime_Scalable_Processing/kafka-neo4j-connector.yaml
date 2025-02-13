@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: kafka-connect
-          image: veedata/kafka-neo4j-connect:latest2
+          image: confluentinc/cp-kafka-connect:latest  # Updated to use the public Kafka Connect image
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8083
@@ -57,5 +57,3 @@ spec:
       volumes:
         - name: connector-plugins
           emptyDir: {}
-
-          
