@@ -16,9 +16,9 @@
 
 │-- 📜 Dockerfile # Containerized setup 
 
-│-- 📜 interface.py # PageRank algorithm 
+│-- 📜 interface.py # PageRank and BFS algorithm implementation
 
-│-- 📜 tester.py # tester algorithm 
+│-- 📜 tester.py # python file for testing pagerank and bfs algorithm  
 
 │-- 📜 data_loader.py # Loads dataset into Neo4j
 
