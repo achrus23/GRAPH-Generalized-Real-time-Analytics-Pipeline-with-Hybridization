@@ -46,6 +46,13 @@ Key attributes include:
 ## 🚀 **Setup Instructions**  
 The setup for each phase is provided in its respective folder:
 
+Clone the Repository**  
+To begin, clone the repository to your local machine:  
+```sh
+git clone https://github.com/achrus23/GRAPH-Generalized-Real-time-Analytics-Pipeline-with-Hybridization.git
+cd cd graph-analytics-pipeline/GRAPH_Generalized_Real_time_Analytics_Pipeline_with_Hybridization
+```
+
 📂 **[Phase 1: Foundational Graph Processing](./Phase1_Foundational_Graph_Processing/README.md)**  
 - Includes **Dockerized setup** for Neo4j and initial graph processing.  
 - Instructions for **running PageRank and BFS algorithms**.  
