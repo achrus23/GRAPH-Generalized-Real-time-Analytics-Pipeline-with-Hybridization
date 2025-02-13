@@ -25,5 +25,5 @@
 │-- 📜 data_loader.py # Loads dataset into Neo4j
 
 
-## 🛠 **Setup Instructions**  
+## **Setup Instructions**  
 For detailed setup steps, **please refer to** [setup.md](./setup.md).
