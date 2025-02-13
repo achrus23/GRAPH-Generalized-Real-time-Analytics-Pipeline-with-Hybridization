@@ -1,6 +1,6 @@
 # Phase 2: Setup Guide  
 
-🚀 **This guide walks through setting up Phase 2 using Kubernetes and Kafka** to enable real-time graph processing.  
+**This guide walks through setting up Phase 2 using Kubernetes and Kafka** to enable real-time graph processing.  
 Since the **configuration files automate everything**, you only need to update a few details and run some commands.
 
 ---
@@ -15,5 +15,5 @@ Since the **configuration files automate everything**, you only need to update a
 │-- 📜 kafka-neo4j-connector.yaml # Kafka → Neo4j streaming config
 │-- 📜 interface.py # Interacts with the data pipeline
 
-## 🛠 **Setup Instructions**  
+## **Setup Instructions**  
 For detailed setup steps, **please refer to** [setup.md](./Setup.md).
